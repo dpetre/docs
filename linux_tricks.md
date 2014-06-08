@@ -28,3 +28,9 @@ Graph # of connections for each hosts
 ```
 netstat -an | grep ESTABLISHED | awk '{print $5}' | awk -F: '{print $1}' | sort | uniq -c | awk '{ printf("%s\t%s\t",$2,$1) ; for (i = 0; i < $1; i++) {printf("*")}; print "" }'
 ```
+
+"Watch" a command - automaticaly run a command every x seconds (default is 2 seconds)
+
+```
+watch 'command'
+```
