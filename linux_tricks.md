@@ -35,3 +35,9 @@ netstat -an | grep ESTABLISHED | awk '{print $5}' | awk -F: '{print $1}' | sort 
 ```
 watch 'command'
 ```
+
+Delete lines matching pattern from file
+
+```
+sed -i path_to_file '/pattern/d'
+```
