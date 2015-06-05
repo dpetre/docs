@@ -41,3 +41,7 @@ Delete lines matching pattern from file
 ```
 sed -i path_to_file '/pattern/d'
 ```
+
+Close unresponsive ssh session
+
+Enter + ~ + .
